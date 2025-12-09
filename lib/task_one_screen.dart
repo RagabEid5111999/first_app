@@ -46,6 +46,7 @@ class _TaskOneScreenState extends State<TaskOneScreen> {
                       ),
                     ),
                   ),
+                  //////////////////////////////
                   Container(
                     decoration: BoxDecoration(border: Border()),
                     child: CircleAvatar(
