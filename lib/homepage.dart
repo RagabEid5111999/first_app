@@ -109,20 +109,14 @@ class Home extends StatelessWidget {
             children: [
               customElevatedBTN(
                 context: context,
-<<<<<<< HEAD
                 screenData: "Task One",
                 screenName: 'taskonescreen',
-=======
-                screenData: 'Home Screen Nti',
-                screenName: 'homescreennti',
->>>>>>> 17e16336e3baa4521c4450fa856d453bf497d2c9
               ),
               customElevatedBTN(
                 context: context,
                 screenData: 'Home Screen Nti',
                 screenName: 'homescreennti',
               ),
-<<<<<<< HEAD
               customElevatedBTN(
                 context: context,
                 screenName: 'splash',
@@ -139,53 +133,10 @@ class Home extends StatelessWidget {
                 screenName: "keyboardlisner",
               ),
 
-=======
-              ElevatedButton(
-                onPressed: () => Navigator.pushNamed(context, 'splash'),
-                style: ElevatedButton.styleFrom(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                ),
-                child: const Text(
-                  'Splash Almsar',
-                  style: TextStyle(
-                    color: Colors.blue,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              ElevatedButton(
-                onPressed: () => Navigator.pushNamed(context, 'loginpage'),
-                style: ElevatedButton.styleFrom(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                ),
-                child: const Text(
-                  'Login And Reg Almsar',
-                  style: TextStyle(
-                    color: Colors.blue,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              Container(
-                color: Colors.red,
-                margin: EdgeInsets.symmetric(horizontal: 100, vertical: 10),
-                child: MaterialButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed("keyboardlisner");
-                  },
-                  child: Text("Go To page keyboardlisner"),
-                ),
-              ),
->>>>>>> 17e16336e3baa4521c4450fa856d453bf497d2c9
               Text(
                 "Test Custom font",
                 style: TextStyle(fontFamily: "Lumanosimo"),
               ),
-<<<<<<< HEAD
               customElevatedBTN(
                 context: context,
                 screenData: "Go To page testshared",
@@ -197,28 +148,6 @@ class Home extends StatelessWidget {
                 screenName: "dropdown",
               ),
 
-=======
-              Container(
-                color: Colors.red,
-                margin: EdgeInsets.symmetric(horizontal: 100, vertical: 10),
-                child: MaterialButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed("pageshared");
-                  },
-                  child: Text("Go To page testshared"),
-                ),
-              ),
-              Container(
-                color: Colors.red,
-                margin: EdgeInsets.symmetric(horizontal: 100, vertical: 10),
-                child: MaterialButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed("dropdown");
-                  },
-                  child: Text("Go To page drop down"),
-                ),
-              ),
->>>>>>> 17e16336e3baa4521c4450fa856d453bf497d2c9
               Container(
                 color: Colors.red,
                 margin: EdgeInsets.symmetric(horizontal: 100, vertical: 10),
@@ -238,7 +167,6 @@ class Home extends StatelessWidget {
                   child: Text("Show awesome dialog"),
                 ),
               ),
-<<<<<<< HEAD
               customElevatedBTN(
                 context: context,
                 screenData: "Go To page two",
@@ -250,28 +178,6 @@ class Home extends StatelessWidget {
                 screenName: "pageone",
               ),
 
-=======
-              Container(
-                color: Colors.red,
-                margin: EdgeInsets.symmetric(horizontal: 100, vertical: 10),
-                child: MaterialButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed("pagetwo");
-                  },
-                  child: Text("Go To page two"),
-                ),
-              ),
-              Container(
-                color: Colors.red,
-                margin: EdgeInsets.symmetric(horizontal: 100, vertical: 10),
-                child: MaterialButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed("pageone");
-                  },
-                  child: Text("Go To page one"),
-                ),
-              ),
->>>>>>> 17e16336e3baa4521c4450fa856d453bf497d2c9
               Text(
                 "Categories",
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
@@ -534,16 +440,11 @@ class Home extends StatelessWidget {
     );
   }
 
-<<<<<<< HEAD
   Container customElevatedBTN({
-=======
-  ElevatedButton customElevatedBTN({
->>>>>>> 17e16336e3baa4521c4450fa856d453bf497d2c9
     required BuildContext context,
     required String screenName,
     required String screenData,
   }) {
-<<<<<<< HEAD
     return Container(
       margin: EdgeInsets.only(bottom: 5),
       child: ElevatedButton(
@@ -559,16 +460,6 @@ class Home extends StatelessWidget {
           screenData,
           style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),
         ),
-=======
-    return ElevatedButton(
-      onPressed: () => Navigator.pushNamed(context, screenName),
-      style: ElevatedButton.styleFrom(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-      ),
-      child: Text(
-        screenData,
-        style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),
->>>>>>> 17e16336e3baa4521c4450fa856d453bf497d2c9
       ),
     );
   }
