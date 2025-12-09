@@ -35,7 +35,7 @@ class _TaskOneScreenState extends State<TaskOneScreen> {
                 alignment: Alignment.center,
                 children: [
                   Container(
-                    height: 231,
+                    height: 230,
 
                     width: double.infinity,
                     decoration: BoxDecoration(
