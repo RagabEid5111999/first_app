@@ -1,0 +1,43 @@
+buildscript {
+    ext.kotlin_version = "1.7.10"
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.3.0"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "com.google.gms:google-services:4.3.15"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+/**
+ * تعويض الكود الخاص بتغيير مجلد build
+ * Kotlin DSL → Groovy DSL
+ */
+
+def newBuildDir = rootProject.layout.buildDirectory.dir("../../build").get().asFile
+rootProject.buildDir = newBuildDir
+
+subprojects { project ->
+    // تغيير مجلد build لكل subproject
+    def newSubBuildDir = new File(newBuildDir, project.name)
+    project.buildDir = newSubBuildDir
+}
+
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.layout.buildDirectory
+}
