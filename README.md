@@ -14,3 +14,5 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+# Adding a new screen 
+<img width="407" height="753" alt="image" src="https://github.com/user-attachments/assets/8bb46761-78ac-4557-a0c6-6281e784fdfe" />
