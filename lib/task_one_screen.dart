@@ -11,6 +11,7 @@ class _TaskOneScreenState extends State<TaskOneScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+<<<<<<< HEAD
       persistentFooterAlignment: AlignmentDirectional.center,
       appBar: AppBar(
         title: Text("Profile", style: TextStyle(color: Colors.white)),
@@ -137,6 +138,12 @@ class _TaskOneScreenState extends State<TaskOneScreen> {
             ],
           ),
         ),
+=======
+      appBar: AppBar(
+        title: Text("Profile"),
+        centerTitle: true,
+        leading: Icon(Icons.edit),
+>>>>>>> 17e16336e3baa4521c4450fa856d453bf497d2c9
       ),
     );
   }
