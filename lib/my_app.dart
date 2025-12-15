@@ -67,7 +67,7 @@ class _MyAppState extends State<MyApp> with TickerProviderStateMixin {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         fontFamily: "Lumanosimo",
-        appBarTheme: AppBarTheme(color: Colors.red),
+        appBarTheme: AppBarTheme(backgroundColor: Colors.red),
         textTheme: TextTheme(
           bodyLarge: TextStyle(fontSize: 22, color: Colors.black),
           bodyMedium: TextStyle(fontSize: 18, color: Colors.blue),
